@@ -1,0 +1,46 @@
+@import '../shared/variables.sass'
+
+.appContainer
+  background: #999999
+  margin-left: 200px
+  height: 100vh 
+
+.topHeader
+  background: $blue-top
+  font-family: $font-family-1
+  display: flex
+  justify-content: space-between
+  padding: 22.5px 15px
+  align-items: center
+
+.userInfo
+  display: flex
+  color: $white-base
+  align-items: center
+
+  &__static
+    margin: 0 10px
+    font-size: 18px
+  
+.sideBar
+  position: absolute
+  width: 200px
+
+  &__link
+    padding: 10px 20px
+    font-family: $font-family-1
+    position: relative
+
+    a
+      color: inherit !important
+      text-decoration: none !important
+  
+  .active
+    &:before
+      content: ''
+      background: $blue-menu
+      top: 0
+      left: 0
+      position: absolute
+      width: 3px
+      height: 100%
