@@ -9,15 +9,8 @@ import Downloads from '../Widgets/Downloads';
 class Layout extends Component {
   render() {
     return (
-      <div className='wrap'>
-        <Header />
-        <SubHeader />
-        <div className='widgets'>
-          <Balance />
-          <Rate />
-          <Speed />
-          <Downloads />
-        </div>
+      <div className='layout'>
+       layout?
       </div>
     );
   }
