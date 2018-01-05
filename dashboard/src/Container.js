@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router';
 import Layout from './Layout/Layout';
 import Header from './Header/Header';
-import NotFound from './NotFound/NotFound';
+//import NotFound from './NotFound/NotFound';
 import Payment from './Payment/Payment';
 import Profile from './Profile/Profile';
 import Exit from './Exit/Exit';
@@ -54,7 +54,7 @@ class Container extends Component {
       <div>
         <Header onTabClick={this.toggleActive} links={links} link={historyLink ? historyLink : link} />
         <div className='appContainer'>
-          {links.map(link => <Route path={link.path} exact={link.exact} component={link.component} />)}
+          {links.map(link => <Route key={link.path} path={link.path} exact={link.exact} component={link.component} />)}
         </div>
       </div>
     );

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Header.sass';
 
 class Header extends Component {
@@ -10,10 +10,10 @@ class Header extends Component {
       <header>
         <div className='topHeader'>
           <div className='logo'>
-            <img src='logo.png'/>
+            <img alt='Zatymenka' src='logo.png'/>
           </div>
           <div className='userInfo'>
-            <img src='userpic.png' />
+            <img alt='avatar' src='userpic.png' />
             <div className='userInfo__static'>
               <div>Тестовый Пользователь Сын-Своего-Отца</div>
               <div>Лицевой счёт № 1337228</div>

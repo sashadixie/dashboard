@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Container from './Container';
-import { withRouter } from 'react-router'
-import { Router, Switch, Route, Link } from 'react-router-dom';
+import { Router } from 'react-router-dom';
 import createBrowserHistory from 'history/createBrowserHistory';
 const history = createBrowserHistory();
 class App extends Component {
