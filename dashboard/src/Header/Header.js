@@ -25,8 +25,8 @@ class Header extends Component {
         {
           links.map(item => {
             return (
-              <li className={`sideBar__link ${item.path === link ? 'active' : ''}`} data-link='/' onClick={onTabClick}>
-                <Link exact={item.exact} to={item.path} data-link={item.path}>
+              <li className={`sideBar__link ${item.path === link ? 'active' : ''}`} key={`link${item.path}`} data-link='/' onClick={onTabClick}>
+                <Link exact={item.exact} to={item.path}  data-link={item.path}>
                   {item.name}
                 </Link>
               </li>

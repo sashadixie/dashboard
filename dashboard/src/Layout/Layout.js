@@ -11,7 +11,7 @@ class Layout extends Component {
   render() {
     axios({
       method: 'post',
-      url: 'http://193.33.166.7:2580/statapi.php',
+      url: '/statapi.php',
       data: {
         f: 'login',
         account: '704070',
